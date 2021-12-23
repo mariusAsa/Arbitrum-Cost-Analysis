@@ -10,5 +10,7 @@ The task was to write a 10 page report on a given topic. I completed this task b
 time went into creating the jupyter notebook and learning how to extract data from html pages.
 I hope that the jupyter notebook will be taken into considerations while grading.  
 
-Best regards,
+You can also find the powerpoint presentation which was given under './Marius-Asadauskas-Seminar-Cryptography-Presentation.pdf'  
+
+Best regards,  
 Marius Paulius Asadauskas
