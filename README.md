@@ -6,7 +6,7 @@ Furthermore, you can find the code that was used to analyse the cost of transact
 in the form of a jupyter notebook under './Arbitrum_avg_cost.ipynb'.
 The jupyter notebook was created with Python 3.7. However, it should also work with other python versions.  
 
-The task was to write a 10 page report on a given topic. I completed this task but a main portion of the
+The task was to write a 10 page report on a given topic. I completed this task but a large portion of the
 time went into creating the jupyter notebook and learning how to extract data from html pages.
 I hope that the jupyter notebook will be taken into considerations while grading.  
 
