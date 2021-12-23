@@ -142,15 +142,15 @@ work.
 
 \subsection{Optimistic}
 The optimistic half of optimistic rollups refers to how the rollups get posted on the Ethereum blockchain.
-Namely, any manager of a smart contract can claim a state change. Arbitrum is optimistic in
-the sense that if nobody disputes the claim, the hash will get updated. However, if another user objects to
-the claim within the given time frame of around a week, a part of the smart contract will get verified on
-chain to test the validity of the claim. The mechanism for choosing what parts of the smart contract to
-execute on chain is called the bisection protocol, and it works by dividing the instructions into two equal parts
-until the instruction that was executed falsely is found.
+Any manager of a smart contract can assert that a state change has happened. Arbitrum is optimistic in
+the sense that if nobody disputes this claim, the hash will be updated. However, if another user challenges
+the claim within the given time frame of around a week, the protocol will go into the bisection protocol.
+The bisection protocol takes a computation and splits it into two equal halves until a single false instruction 
+is found. Once the single false instruction is found it can be sent to Layer 1 for evaluation to determine whether
+the claim was valid or not.
 
-This way, smart contracts do not have to run on the Ethereum blockchain, but if a problem occurs the validity
-of an execution can be verified on the blockchain with minimal costs.
+This way in the optimistic scenario nothing ever has to be computed on chain and in the worst scenario only a single instruction
+must be computed on chain.
 
 \begin{figure}[h]
 	\centering
